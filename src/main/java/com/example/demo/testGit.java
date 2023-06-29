@@ -9,4 +9,10 @@ public class testGit {
     private String GIt;
    private Double Git23;
     private String GIt2;
+
+
+    private String GitTest1;
+    private String GitTest2;
+    private String GitTest3;
+
 }
