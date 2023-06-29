@@ -7,7 +7,6 @@ package com.example.demo;
  */
 public class testGit {
     private String GIt;
-    private String GIt1;
-    private  Integer Git12;
+   private Double Git23;
     private String GIt2;
 }
