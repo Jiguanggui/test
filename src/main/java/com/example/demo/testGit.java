@@ -10,11 +10,16 @@ public class testGit {
    private Double Git23;
     private String GIt2;
 
-
     private String GitTest1;
     private String GitTest2;
     private String GitTest3;
     private String GitTest4;
     private String GitTest5;
+    private String GitTest6;
+    public static void main(String[] args) {
+        System.out.println("我是test");
+    }
+
+
 
 }
