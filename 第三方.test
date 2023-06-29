@@ -1,0 +1,50 @@
+3.3 根据ThirdOrderId查询结算订单接口
+注意：此接口仅限于特定客户对接
+环境	地址
+测试环境	http://47.95.0.114:20000/business/payment/queryByThirdOrderId/{tenantCode}
+正式环境
+
+3.2.1 公共请求参数
+参数	类型（长度）	是否必填	描述	示例值
+version	Number	是	接口版本	1
+reqId	String	是	请求序号，每次请求保持唯一，表明报文的唯一编号	33498c44-0316-4936-92db-7f4fd0ca7512
+sign	String	是	加签字符串
+signType	String	是	签名方式	RSA
+encType	String	是	加密方式	DES
+3.2.2 业务请求参数
+参数	类型	是否必填	描述	示例
+agentCode	String	是	代理商号
+thirdOrderId	String	是	三方订单号
+current	Number	是	当前页数	1
+size	Number	是	每页条数(最大50)	30
+
+3.2.3 业务响应参数
+参数	类型	是否必填	描述	示例
+reqId	String	是	请求序号返回	44565123165454
+resCode	String	是	请求返回码	0000
+resMsg	String	是	请求返回消息	成功
+sign 	String	是	加签数据
+data	String	是	DES加密数据
+ip	String	否	请求IP地址
+
+data解密后参数
+参数	类型	是否必填	描述	示例
+batchNo	String	是	批次号
+merOrderId	String	是	商户订单号
+merBatchId	String	是	商户批次号
+merId	String	是	商户号
+bankCode	String	是	银行编码
+amt	Decimal	是	交易金额
+payeeName	String	是	收款人名称
+payeeAcc	String	是	收款人账号
+idCard	String	是	身份证号码
+mobile	String	是	手机号
+memo	String	否	备注
+state	String	是	交易状态(T成功)
+platFee	Decimal	是	平台服务费
+returnMsg	String	是	系统返回信息
+levyCode	String	是	税优地编号
+receiptUrl	String	否	电子回单url地址
+taskOrderId	String 	否	任务订单号
+serialNum	String	否	项目编号
+createTime	String	是	创建时间
