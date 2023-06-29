@@ -14,5 +14,7 @@ public class testGit {
     private String GitTest1;
     private String GitTest2;
     private String GitTest3;
+    private String GitTest4;
+    private String GitTest5;
 
 }
