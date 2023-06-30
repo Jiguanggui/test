@@ -20,17 +20,18 @@ class DemoApplicationTests {
         System.out.println(l);
 
         Date date = new Date();
-        System.out.println(date);
+        System.out.println(date); //Fri Jun 30 10:12:38 CST 2023
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        System.out.println(format.format(date));
+        System.out.println(format.format(date)); //2023-06-30 10:12:38
         LocalDate localDate = LocalDate.now();
-        System.out.println(localDate);
+        System.out.println(localDate); //  2023-06-30
         LocalDateTime localDateTime = LocalDateTime.now();
-        System.out.println(localDateTime);
+        System.out.println(localDateTime); //2023-06-30T10:12:38.140
 
 
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        System.out.println(dateTimeFormatter.format(localDateTime));
+        System.out.println(dateTimeFormatter.format(localDateTime));  //2023-06-30 10:12:38
+
     }
 
 
@@ -43,10 +44,6 @@ class DemoApplicationTests {
         LocalDateTime localDateTime = LocalDateTime.now();
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         System.out.println(dateTimeFormatter.format(localDateTime));
-
-
-
-
     }
 
 
